@@ -8,7 +8,6 @@ public class CarDAOMainDemo {
 
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfiguration.class);
-
         CarDao carDao = context.getBean(CarDao.class);
         Car car = new Car("TEM0004", "Red", 4, 4);
         carDao.insert(car);
