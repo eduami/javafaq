@@ -1,4 +1,4 @@
-package org.eduami.javafaq.springjdbc.dao;
+package org.eduami.javafaq.springjdbc.daodbcp;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
