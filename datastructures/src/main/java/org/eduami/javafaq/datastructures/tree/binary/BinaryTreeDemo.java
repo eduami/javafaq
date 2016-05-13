@@ -22,5 +22,22 @@ public class BinaryTreeDemo {
 	System.out.println(BinaryTree.TraverseOrder.INORDER);
 	carsTree.printElements(BinaryTree.TraverseOrder.INORDER);
 	
+	
+	BinaryTree<Integer> itree= new BinaryTree<Integer>();
+	itree.add(40);
+	itree.add(25);
+	itree.add(78);
+	itree.add(10);
+	itree.add(32);
+	
+	itree.printElements(BinaryTree.TraverseOrder.INORDER);
+	System.out.println(itree.contains(250));
+	
+	System.out.println("LEVEL ORDER Traversal");
+	itree.printElements(BinaryTree.TraverseOrder.LEVELORDER);
+	
+	System.out.println("Elements at level 2");
+	itree.printElementsAtLevel(2);
+	
 	}
 }
